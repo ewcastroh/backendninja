@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 	Para mostrar el dato de un objeto en especifico. -->
+	<!-- <h1>Hello <span th:text="${person.name}"></span>!</h1>
+	<h3>Your age is: <span th:text="${person.age}"></span></h3> -->
+	<!-- 	Para mostrar un listado de objetos en una tabla -->
+	<table>
+		<thead>
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+			</tr>
+		</thead>
+		<tbody th:each="person : ${people}">
+			<tr>
+				<th th:text="${person.name}"></th>
+				<th th:text="${person.age}"></th>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
