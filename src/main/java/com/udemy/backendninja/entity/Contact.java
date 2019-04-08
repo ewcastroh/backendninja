@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "contact")
 public class Contact {
-	
+
 	@Id
 	@GeneratedValue
 	@Column(name = "id")
@@ -38,6 +38,14 @@ public class Contact {
 		this.lastname = lastname;
 		this.telephone = telephone;
 		this.city = city;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getFirstname() {
