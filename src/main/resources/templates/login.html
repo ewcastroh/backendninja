@@ -21,7 +21,7 @@
       <!-- <form class="form-signin" action="#" th:action="@{/logincheck}" th:object="${userCredential}" method="post"> -->
       <form class="form-signin" action="#" th:action="@{/logincheck}" method="POST">
       	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-        <h2 class="form-signin-heading">Sign in</h2>
+        <h2 class="form-signin-heading">Sign in!</h2>
         <label for="inputEmail" class="sr-only">Username</label>
         <!-- <input type="text" id="inputUsername" class="form-control" placeholder="Username" th:field="*{username}" /> -->
         <input type="text" class="form-control" placeholder="Username" name="username" id="username" />

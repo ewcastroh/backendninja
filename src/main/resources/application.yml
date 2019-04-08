@@ -6,4 +6,6 @@ spring:  banner:    location: classpath:banner.txt  datasource:    url: jdbc
     hibernate:      ddl-auto: update
       naming:        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
         #implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+          thymeleaf:    cache: false
 server:  error:    whitelabel:      enabled: true
+      
